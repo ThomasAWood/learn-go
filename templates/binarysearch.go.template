@@ -1,0 +1,9 @@
+package algorithms
+
+// Add any imports here
+
+// Return the index of the item, or -1 if it's not in the list
+func BinarySearch(needle int, haystack []int) int {
+	return -1
+}
+
