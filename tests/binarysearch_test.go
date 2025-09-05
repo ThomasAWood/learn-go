@@ -13,10 +13,40 @@ func TestBinarySearch(t *testing.T) {
 		expected int
 	}{
 		{
-			name:     "Normal Test Case",
+			name:     "Normal",
 			haystack: []int{0, 1, 2, 3, 4, 5},
 			needle:   3,
 			expected: 3,
+		},
+		{
+			name:     "Not Present",
+			haystack: []int{0, 1, 2, 3, 4, 5},
+			needle:   72,
+			expected: -1,
+		},
+		{
+			name:     "Length One Present",
+			haystack: []int{5},
+			needle:   5,
+			expected: 0,
+		},
+		{
+			name:     "Length One Not Present",
+			haystack: []int{5},
+			needle:   3,
+			expected: -1,
+		},
+		{
+			name:     "First Half",
+			haystack: []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10},
+			needle:   3,
+			expected: 2,
+		},
+		{
+			name:     "Second Half",
+			haystack: []int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10},
+			needle:   7,
+			expected: 7,
 		},
 	}
 
