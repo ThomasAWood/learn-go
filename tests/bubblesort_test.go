@@ -16,6 +16,26 @@ func TestBubbleSort(t *testing.T) {
 			input:    []int{5, 4, 3, 2, 1},
 			expected: []int{1, 2, 3, 4, 5},
 		},
+		{
+			name:     "Empty List",
+			input:    []int{},
+			expected: []int{},
+		},
+		{
+			name:     "Length One",
+			input:    []int{1},
+			expected: []int{1},
+		},
+		{
+			name:     "All the same",
+			input:    []int{2, 2, 2, 2, 2, 2},
+			expected: []int{2, 2, 2, 2, 2, 2},
+		},
+		{
+			name:     "Duplicate Numbers",
+			input:    []int{3, 5, 3, 5, 3, 2, 1, 9},
+			expected: []int{1, 2, 3, 3, 3, 5, 5, 9},
+		},
 	}
 
 	// Run all tests

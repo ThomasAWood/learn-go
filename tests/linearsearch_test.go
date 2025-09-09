@@ -18,6 +18,30 @@ func TestLinearSearch(t *testing.T) {
 			needle:   3,
 			expected: 3,
 		},
+		{
+			name:     "Not Present",
+			haystack: []int{3, 4, 5, 6, 7, 8},
+			needle:   6,
+			expected: 3,
+		},
+		{
+			name:     "Length One Present",
+			haystack: []int{5},
+			needle:   5,
+			expected: 0,
+		},
+		{
+			name:     "Length One Not Present",
+			haystack: []int{5},
+			needle:   9,
+			expected: -1,
+		},
+		{
+			name:     "Empty List",
+			haystack: []int{},
+			needle:   9,
+			expected: -1,
+		},
 	}
 
 	for _, tt := range tests {
