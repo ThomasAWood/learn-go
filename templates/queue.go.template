@@ -1,0 +1,24 @@
+package algorithms
+
+// A queue that only stores positive integers. -1 is returned as null or error
+
+// Implement data structures here
+
+
+// Implement Queue functions
+// Return -1 if empty
+func (q *Queue) Peek() int {
+	// Implement this
+	return -1
+}
+
+func (q *Queue) Enqueue(value int) {
+	// Implement this
+	return
+}
+
+// Return -1 if empty
+func (q *Queue) Dequeue() int {
+	// Implement this
+	return -1
+}
